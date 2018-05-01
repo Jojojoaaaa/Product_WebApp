@@ -1,0 +1,91 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+      <Schema Namespace="classicmodelsModel.Store" Provider="MySql.Data.MySqlClient" ProviderManifestToken="5.1" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityType Name="products">
+          <Key>
+            <PropertyRef Name="productCode" />
+          </Key>
+          <Property Name="productCode" Type="varchar" MaxLength="15" Nullable="false" />
+          <Property Name="productName" Type="varchar" MaxLength="70" Nullable="false" />
+          <Property Name="productLine" Type="varchar" MaxLength="50" Nullable="false" />
+          <Property Name="productScale" Type="varchar" MaxLength="10" Nullable="false" />
+          <Property Name="productVendor" Type="varchar" MaxLength="50" Nullable="false" />
+          <Property Name="productDescription" Type="text" Nullable="false" />
+          <Property Name="quantityInStock" Type="smallint" Nullable="false" />
+          <Property Name="buyPrice" Type="decimal" Precision="10" Scale="2" Nullable="false" />
+          <Property Name="MSRP" Type="decimal" Precision="10" Scale="2" Nullable="false" />
+        </EntityType>
+        <EntityContainer Name="classicmodelsModelStoreContainer">
+          <EntitySet Name="products" EntityType="Self.products" Schema="classicmodels" store:Type="Tables" />
+        </EntityContainer>
+      </Schema>
+    </edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="classicmodelsModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityType Name="product">
+          <Key>
+            <PropertyRef Name="productCode" />
+          </Key>
+          <Property Name="productCode" Type="String" MaxLength="15" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="productName" Type="String" MaxLength="70" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="productLine" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="productScale" Type="String" MaxLength="10" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="productVendor" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="productDescription" Type="String" MaxLength="65535" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="quantityInStock" Type="Int16" Nullable="false" />
+          <Property Name="buyPrice" Type="Decimal" Nullable="false" />
+          <Property Name="MSRP" Type="Decimal" Nullable="false" />
+        </EntityType>
+        <EntityContainer Name="classicmodelsEntities2" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="products" EntityType="Self.product" />
+        </EntityContainer>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="classicmodelsModelStoreContainer" CdmEntityContainer="classicmodelsEntities2">
+          <EntitySetMapping Name="products">
+            <EntityTypeMapping TypeName="classicmodelsModel.product">
+              <MappingFragment StoreEntitySet="products">
+                <ScalarProperty Name="productCode" ColumnName="productCode" />
+                <ScalarProperty Name="productName" ColumnName="productName" />
+                <ScalarProperty Name="productLine" ColumnName="productLine" />
+                <ScalarProperty Name="productScale" ColumnName="productScale" />
+                <ScalarProperty Name="productVendor" ColumnName="productVendor" />
+                <ScalarProperty Name="productDescription" ColumnName="productDescription" />
+                <ScalarProperty Name="quantityInStock" ColumnName="quantityInStock" />
+                <ScalarProperty Name="buyPrice" ColumnName="buyPrice" />
+                <ScalarProperty Name="MSRP" ColumnName="MSRP" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="true" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="true" />
+        <DesignerProperty Name="UseLegacyProvider" Value="true" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="None" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>

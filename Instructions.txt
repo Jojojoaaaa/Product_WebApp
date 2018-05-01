@@ -1,0 +1,13 @@
+Create a web app that will be able to perform the following:
+1. Display all records in the table products (10pts)
+2. Filter products by product line (10pts)
+3. Count products by product line and then display percentage (30pts)
+
+notes:
+* web services must be utilized and app should have client and server sides. (deductions will be applied if not followed) 
+
+
+bonus points for the following:
+a. use of OOP (10pts)
+b. design using html and css (10pts)
+

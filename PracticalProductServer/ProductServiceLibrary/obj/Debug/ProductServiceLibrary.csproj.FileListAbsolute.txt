@@ -1,0 +1,8 @@
+c:\users\joahnna\documents\visual studio 2015\Projects\PracticalProductServer\ProductServiceLibrary\obj\Debug\ProductServiceLibrary.csprojResolveAssemblyReference.cache
+c:\users\joahnna\documents\visual studio 2015\Projects\PracticalProductServer\ProductServiceLibrary\bin\Debug\ProductServiceLibrary.dll.config
+c:\users\joahnna\documents\visual studio 2015\Projects\PracticalProductServer\ProductServiceLibrary\bin\Debug\ProductServiceLibrary.dll
+c:\users\joahnna\documents\visual studio 2015\Projects\PracticalProductServer\ProductServiceLibrary\bin\Debug\ProductServiceLibrary.pdb
+c:\users\joahnna\documents\visual studio 2015\Projects\PracticalProductServer\ProductServiceLibrary\bin\Debug\EntityFramework.dll
+c:\users\joahnna\documents\visual studio 2015\Projects\PracticalProductServer\ProductServiceLibrary\bin\Debug\EntityFramework.xml
+c:\users\joahnna\documents\visual studio 2015\Projects\PracticalProductServer\ProductServiceLibrary\obj\Debug\ProductServiceLibrary.dll
+c:\users\joahnna\documents\visual studio 2015\Projects\PracticalProductServer\ProductServiceLibrary\obj\Debug\ProductServiceLibrary.pdb

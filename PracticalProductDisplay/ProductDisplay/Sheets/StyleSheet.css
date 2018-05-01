@@ -1,0 +1,24 @@
+﻿body {
+    
+}
+#wrapper {
+    width: 700px;
+    margin:auto;
+    background-color:darkgrey;
+}
+#lblhdr {
+   font-family:'Goudy Old Style';
+   font-size: 25pt;
+   font-weight:bolder;
+   color:white;
+   text-align:center;
+}
+
+#box {
+  margin-left: 260px;
+}
+
+#box2 {
+  margin-left: 260px;
+  padding-bottom: 50px;
+}
